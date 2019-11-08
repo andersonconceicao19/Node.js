@@ -1,0 +1,12 @@
+<h1>Postagens cadastradas</h1>
+<a href="/cad"><button> Cadastrar</button></a>
+
+<div class="x">
+{{#each post}}
+  <h3>{{Titulo}}</h3>  
+    <p>{{Conteudo}}</p>
+    <a href="deletar/{{id}}"><button>Excluir Post</button></a>
+    <hr>
+
+{{/each}}
+</div>
