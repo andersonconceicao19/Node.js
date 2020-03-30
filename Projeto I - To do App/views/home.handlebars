@@ -1,0 +1,39 @@
+<h1>Lista de Comentários</h1>
+
+<table class="table">
+  <thead>
+    <!--<td>id</td>-->
+    <td>Título</td>
+    <td>Conteúdo</td>
+    <td>Ações</td>
+  </thead>
+  <tbody>
+    {{#each post}}
+    <tr>
+      <!--<td>{{id}}</td>-->
+      <td>{{Titulo}}</td>
+      <td>{{Conteudo}}</td>
+      <td>
+        <div class="grup-action">
+          <form class="form-action" action="/edit/{{id}}" method="get">
+            <button type="submit" class="action-edit">
+              <i class="material-icons">Editar</i>
+            </button>
+          </form>
+          <form class="form-action" action="/deletar/{{id}}" method="get">
+            <button type="submit" class="action-delete">
+              <i class="material-icons">Apagar</i>
+            </button>
+          </form>
+        </div>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<br>
+<form class="new-post" action="cad" method="get">
+  <button type="submit">Nova Postagem!</button>
+</form>
+ <hr>
