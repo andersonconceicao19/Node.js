@@ -35,9 +35,6 @@
     }, 2000)
  }
 
- function resolverUsuario(error, usuario) {
-    console.log('usuário: ', usuario);
- }
 
  // const usuario = obterUsuario(resolverUsuario); teste a chamada de uma func através de outra.
  obterUsuario(function resolverUsuario(error, usuario){
@@ -57,7 +54,7 @@
                 console.log('xii deu ruim no endereco', error2);
                 return;
             }
-            console.log(`nome: ${usuario.nome}, telefone: ${telefone.telefone}, em 2022 vai morar em ${endereco.cidade}`);
+            console.log(`Nome: ${usuario.nome}, telefone: ${telefone.telefone}, em 2022 vai morar em ${endereco.cidade}`);
         })
     })
  })  
