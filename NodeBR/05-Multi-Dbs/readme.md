@@ -15,7 +15,7 @@ Linkando o administrador a um Administrador. Apontano a porta que se deve ouvir.
 
 Linkando o administrador a um Administrador. Apontano a porta que se deve ouvir. 
     No localhost:8080 = Vai abrir uma interface para manipulação
-            ## docker run --name mongoClient -p 3000:3000 --link mongodb:mongodb -d mongoClient/mongoClient
+            ## docker run --name mongoclient -p 3000:3000 --link mongodb:mongodb -d mongoclient/mongoclient
 
 Criando usuario de escrita e leitura no mongo, através de linha de comando.
 

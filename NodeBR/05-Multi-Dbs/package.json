@@ -1,0 +1,12 @@
+{
+  "name": "05-Multi-Dbs",
+  "version": "1.0.0",
+  "description": "Linkando o administrador a um Administrador. Apontano a porta que se deve ouvir. \r     No localhost:8080 = Vai abrir uma interface para manipulação",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
