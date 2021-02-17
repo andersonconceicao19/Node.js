@@ -1,6 +1,6 @@
 # Criando imagem do POSTGRES NO DOCKER
 
-            ## docker run --name postgres -e POSTGRES_USER=anderson -e POSTGRES_PASSWORD=minhaSenha -e POSTGRES_DB=heroes -p 5432:5432  -d postgres
+            ## docker run --name postgres -e POSTGRES_USER=anderson -e POSTGRES_PASSWORD=minhaSenha -e POSTGRES_DB=heroes -p 5432:5432 -d postgres
 
 
 Linkando o administrador a um Administrador. Apontano a porta que se deve ouvir. 
@@ -8,7 +8,7 @@ Linkando o administrador a um Administrador. Apontano a porta que se deve ouvir.
 
             ## docker run --name adminer -p 8080:8080 --link postgres:postgres -d adminer
 
-
+    // servidor:  postgres
 
 ## Criando imagem MONGODB NO DOCKER
             ## docker run --name mongodb -e MONGO_INITDB_ROOT_USER=admin -e MONGO_INITDB_ROOT_PASSWORD=minhaSenha -p 27017:27017  -d mongo:4
