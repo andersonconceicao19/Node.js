@@ -1,0 +1,9 @@
+cp = copiar dados entre o recipiente e o host usado
+Fazer Backup do container, para o host
+	>> Codigo do Container:/Caminho do docker  >> Para onde vai o backup
+docker cp 54559049d3fa:/var/opt/mssql/data/curso.back c:\dev\Banco
+
+Para fazer backup do host ao container
+	(1)É Necessário que esteja mesmo caminho que está o banco 
+Aqui(1)		    (2)o backup	  (3)Container:Caminho do container
+c:\dev\Banco>docker cp curso.bak  54559049d3fa:/var/opt/mssql/data
